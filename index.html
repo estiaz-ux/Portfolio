@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>John Doe | Designer & Developer</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <!-- Google Fonts: Inter -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Header -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-200">
+    <nav class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="#" class="text-2xl font-bold text-indigo-600">Estiaz Nur Pritom.</a>
+      <div class="hidden md:flex space-x-10">
+        <a href="#home" class="hover:text-indigo-600 transition">Home</a>
+        <a href="#skills" class="hover:text-indigo-600 transition">Skills</a>
+        <a href="#services" class="hover:text-indigo-600 transition">Services</a>
+        <a href="#experience" class="hover:text-indigo-600 transition">Experience</a>
+        <a href="#contact" class="hover:text-indigo-600 transition">Contact</a>
+      </div>
+      <button id="mobile-menu-btn" class="md:hidden text-2xl">
+        <i class="fas fa-bars"></i>
+      </button>
+    </nav>
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-gray-200">
+      <div class="px-6 py-4 space-y-4">
+        <a href="#home" class="block hover:text-indigo-600">Home</a>
+        <a href="#skills" class="block hover:text-indigo-600">Skills</a>
+        <a href="#services" class="block hover:text-indigo-600">Services</a>
+        <a href="#experience" class="block hover:text-indigo-600">Experience</a>
+        <a href="#contact" class="block hover:text-indigo-600">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-600 text-white">
+    <div class="absolute inset-0 bg-black/40"></div>
+    <div class="relative z-10 text-center px-6 max-w-4xl mx-auto">
+      <h1 class="text-5xl md:text-7xl font-extrabold mb-6">Estiaz Nur Pritom</h1>
+      <p class="text-xl md:text-3xl mb-8 font-light opacity-90">Creative Designer & Full-Stack Developer</p>
+      <p class="text-lg md:text-xl max-w-2xl mx-auto mb-10 opacity-80">
+        Crafting digital experiences that blend beautiful design with powerful functionality.
+      </p>
+      <a href="#contact" class="inline-block bg-white text-indigo-600 px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-100 transition transform hover:scale-105">
+        Let's Work Together
+      </a>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="py-20 px-6">
+    <div class="max-w-7xl mx-auto">
+      <h2 class="text-4xl md:text-5xl font-bold text-center mb-16">Skills & Expertise</h2>
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+        <div class="skill-card"><i class="fab fa-figma"></i><h3>UI/UX Design</h3><p>Figma, Adobe XD, Sketch</p></div>
+        <div class="skill-card"><i class="fas fa-code"></i><h3>Frontend Dev</h3><p>React, Vue, Tailwind</p></div>
+        <div class="skill-card"><i class="fas fa-server"></i><h3>Backend Dev</h3><p>Node.js, Python, Firebase</p></div>
+        <div class="skill-card"><i class="fas fa-mobile-alt"></i><h3>Mobile Apps</h3><p>React Native, Flutter</p></div>
+        <div class="skill-card"><i class="fas fa-paint-brush"></i><h3>Branding</h3><p>Logo, Identity, Strategy</p></div>
+        <div class="skill-card"><i class="fas fa-video"></i><h3>Motion Design</h3><p>After Effects, Lottie</p></div>
+        <div class="skill-card"><i class="fas fa-search-dollar"></i><h3>SEO & Analytics</h3><p>Google Analytics, SEO</p></div>
+        <div class="skill-card"><i class="fas fa-cloud"></i><h3>Cloud & DevOps</h3><p>AWS, Docker, CI/CD</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="py-20 px-6 bg-gray-100">
+    <div class="max-w-7xl mx-auto">
+      <h2 class="text-4xl md:text-5xl font-bold text-center mb-16">Services I Offer</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div class="service-card"><i class="fas fa-palette"></i><h3>Web Design</h3><p>Pixel-perfect, modern, conversion-focused designs.</p></div>
+        <div class="service-card"><i class="fas fa-laptop-code"></i><h3>Web Development</h3><p>Fast, secure, scalable websites & web apps.</p></div>
+        <div class="service-card"><i class="fas fa-mobile-alt"></i><h3>Mobile Apps</h3><p>Native & cross-platform apps for iOS & Android.</p></div>
+        <div class="service-card"><i class="fas fa-bullhorn"></i><h3>Digital Marketing</h3><p>SEO, content strategy, and growth campaigns.</p></div>
+        <div class="service-card"><i class="fas fa-chart-line"></i><h3>Consulting</h3><p>Tech & design consulting for smarter growth.</p></div>
+        <div class="service-card"><i class="fas fa-headset"></i><h3>Support</h3><p>Ongoing updates and performance optimization.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="py-20 px-6">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-4xl md:text-5xl font-bold text-center mb-20">Work Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="date">2023 – Present</div>
+          <div class="content">
+            <h3>Senior Product Designer</h3>
+            <p class="company">TechFlow Inc.</p>
+            <p>Leading design system and product strategy for enterprise SaaS platform.</p>
+          </div>
+        </div>
+        <div class="timeline-item reverse">
+          <div class="date">2021 – 2023</div>
+          <div class="content">
+            <h3>Full-Stack Developer</h3>
+            <p class="company">StartupX</p>
+            <p>Built MVPs with React/Node.js. Helped raise $2M seed.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="date">2019 – 2021</div>
+          <div class="content">
+            <h3>UI/UX Designer</h3>
+            <p class="company">Creative Agency</p>
+            <p>Designed 50+ client projects including apps and branding.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-20 px-6 bg-gradient-to-r from-indigo-600 to-purple-700 text-white">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-4xl md:text-5xl font-bold mb-10">Let's Build Something Great</h2>
+      <p class="text-xl mb-12">Available for freelance and full-time opportunities.</p>
+      <form id="contact-form" class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-2xl mx-auto">
+        <input type="text" placeholder="Name" required />
+        <input type="email" placeholder="Email" required />
+        <input type="text" placeholder="Subject" class="md:col-span-2" />
+        <textarea placeholder="Message" rows="6" required class="md:col-span-2"></textarea>
+        <button type="submit" class="md:col-span-2">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-12 px-6">
+    <div class="max-w-7xl mx-auto text-center">
+      <div class="flex justify-center space-x-8 mb-8">
+        <a href="#" class="text-2xl hover:text-indigo-400"><i class="fab fa-linkedin"></i></a>
+        <a href="#" class="text-2xl hover:text-indigo-400"><i class="fab fa-github"></i></a>
+        <a href="#" class="text-2xl hover:text-indigo-400"><i class="fab fa-behance"></i></a>
+        <a href="#" class="text-2xl hover:text-indigo-400"><i class="fab fa-dribbble"></i></a>
+      </div>
+      <p class="text-gray-400">&copy; 2025 Estiaz Nur Pritom. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
